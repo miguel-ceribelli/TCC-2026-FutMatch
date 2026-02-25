@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>FutMatch - Atleta Cadastro</title>
+</head>
+<body>
+  <form>
+    <p>Olá atleta, bem vindo ao FutMatch</p>
+    
+    <label for="name">Nome completo <input type="text" id="name" required></label>
+    
+    <label for="date">Data de nascimento <input type="date" id="date" required></label>
+    
+    <label for="email">E-mail <input type="email" id="email" required></label>
+    
+    <label for="password">Senha <input type="password" id="password" required></label>
+    
+    <label for="confirm-password">Confirmar senha <input type="password" id="confirm-password" required></label>
+    
+    <label for="altura">Altura (cm) <input type="number" id="altura" min="100" max="230" step="1" required></label>
+    
+    <label for="peso">Peso (kg) <input type="number" id="peso" min="30" max="150" step="0.1" required></label>
+    
+    <label for="posicao">Posição principal
+      <select id="posicao" required>
+        <option value="">Selecione sua posição</option>
+        <option value="goleiro">Goleiro</option>
+        <option value="zagueiro">Zagueiro</option>
+        <option value="lateral-esquerdo">Lateral Esquerdo</option>
+        <option value="lateral-direito">Lateral Direito</option>
+        <option value="volante">Volante</option>
+        <option value="meia">Meia</option>
+        <option value="meia-atacante">Meia Atacante</option>
+        <option value="ponta-esquerda">Ponta Esquerda</option>
+        <option value="ponta-direita">Ponta Direita</option>
+        <option value="centroavante">Centroavante</option>
+      </select>
+    </label>
+    
+    <label for="pe-dominante">Pé dominante
+      <select id="pe-dominante" required>
+        <option value="">Selecione</option>
+        <option value="direito">Direito</option>
+        <option value="esquerdo">Esquerdo</option>
+        <option value="ambos">Ambos</option>
+      </select>
+    </label>
+    
+    <label for="clube-atual">Clube atual <input type="text" id="clube-atual" placeholder="(Deixe vazio para nenhum)"></label>
+    
+    <label for="categoria">Categoria
+      <select id="categoria">
+        <option value="">Selecione</option>
+        <option value="base">Categorias de Base</option>
+        <option value="profissional">Profissional</option>
+        <option value="amador">Amador</option>
+        <option value="veterano">Veterano</option>
+      </select>
+    </label>
+    
+    <label for="clubes-anteriores">Clubes anteriores (separados por vírgula)</label>
+    <textarea id="clubes-anteriores" rows="3" placeholder="(Deixe vazio para nenhum)"></textarea>
+    
+    <label for="telefone">Telefone para contato <input type="tel" id="telefone" placeholder="(11) 99999-9999"></label>
+    
+    <label for="cidade">Cidade <input type="text" id="cidade" placeholder="Sua cidade" required></label>
+    
+    <label for="estado">Estado
+      <select id="estado" required>
+        <option value="">Selecione seu estado</option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+      </select>
+    </label>
+
+    <a href="atleta-login.html" class="button">Finalizar cadastro</a>
+    
+    <a href="atleta-login.html">Eu já tenho uma conta ></a>
+    <a href="#">Sou um clube ou empresário ></a>
+  </form>
+</body>
+</html>
