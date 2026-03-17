@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Descrição do site para SEO -->
+    <meta name="description" content="FutMatch - Mercado de atletas . Abrindo portas para o proficionalismp!">
+
+    <title>FutMatch - Home</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+
+    
+    <!-- Arquivo CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER - Menu superior -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+
+                    <!-- Logo do site -->
+                    <div class="logo">
+                        <i class="fas fa-gamepad"></i>
+                        <span>FutMatch</span>
+                    </div>
+
+                    <!-- Menu de navegação -->
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link">Início</a></li>
+                        <li><a href="#atletas-federados" class="nav-link">Atletas Federados</a></li>
+                        <li><a href="#atletas-nao-federados" class="nav-link">Atletas Não Federados</a></li>
+                        <li><a href="#about" class="nav-link">Sobre</a></li>
+                        <li><a href="#contact" class="nav-link">Contato</a></li>
+                        <li><a href="atleta-cadastro.html" class="nav-link">Registre-se</a></li>
+                    </ul>
+
+                    <!-- Botões de ação (Whatsapp e menu mobile) -->
+                    <div class="nav-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+
+                        <!-- Botão que aparece no celular -->
+                        <button class="mobile-toggle" id="mobileToggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION - Banner principal -->
+    <section id="home" class="hero">
+
+        <!-- Fundo animado -->
+        <div class="hero-background"></div>
+
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">FutMatch</span>
+                    <br>Atletas com maxima categoria
+                </h1>
+
+                <p class="hero-subtitle">
+                    Os melhores Atletas <strong>Federados</strong> e <strong>Não Federados</strong> Abrindo oportunidades para todos!
+                </p>
+
+                <!-- Lista de benefícios -->
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>100% Seguro</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Garantia de oportunidades</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-headset"></i>
+                        <span>Suporte 24/5</span>
+                    </div>
+                </div>
+
+                <!-- Botões principais -->
+                <div class="hero-cta">
+                    <a href="#atletas-federados" class="btn btn-large btn-gradient">
+                        <i class="fas fa-shopping-cart"></i> Ver Atletas
+                    </a>
+                    <a href="#contact" class="btn btn-large btn-outline">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ícone animado de rolagem -->
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- STATS SECTION - Estatísticas rápidas -->
+    <section class="stats">
+        <div class="container">
+
+            <!-- Grade com estatísticas -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>500+</h3>
+                    <p>Atletas e empresas Satisfeitos</p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <h3>4.9/5</h3>
+                    <p>Avaliação Média</p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fas fa-box"></i>
+                    <h3>1000+</h3>
+                    <p>Atletas Com Sucesso</p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>24/5</h3>
+                    <p>Suporte Online</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS BLOX FRUITS -->
+    <section id="atletas-federados" class="products atletas-federados-section">
+        <div class="container">
+
+            <!-- Cabeçalho da seção -->
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-fire"></i> Atletas Federados
+                </h2>
+                <p class="section-subtitle">Atletas com experiencia, de vida dentro de campo!</p>
+            </div>
+
+            <!-- Filtros de preço -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="low">Defensores</button>
+                <button class="filter-btn" data-filter="medium">Meio Campistas</button>
+                <button class="filter-btn" data-filter="high">Atacantes</button>
+            </div>
+
+            <!-- Área onde os produtos serão carregados via JavaScript -->
+            <div class="products-grid" id="bloxFruitsGrid">
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Carregando Atletas...</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRODUTOS BRAWLHALLA -->
+    <section id="atletas-nao-federados" class="products atletas-nao-federados-section">
+        <div class="container">
+
+            <!-- Cabeçalho -->
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-bolt"></i> Atleta Não Federados
+                </h2>
+                <p class="section-subtitle">Atletas Sem experiencia!</p>
+            </div>
+            
+            <!-- Filtros -->
+            <div class="filters">
+                <button class="filter-btn-brawl active" data-filter="all">Todas</button>
+                <button class="filter-btn-brawl" data-filter="low">Defensores</button>
+                <button class="filter-btn-brawl" data-filter="medium">Meio Campistas</button>
+                <button class="filter-btn-brawl" data-filter="high">Atacantes</button>
+            </div>
+
+            <!-- Produtos carregados via JS -->
+            <div class="products-grid" id="brawlhallaGrid">
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Carregando atletas...</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TESTEMUNHOS -->
+    <section class="testimonials">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-comments"></i> O Que Nossos Atletas Dizem
+                </h2>
+                <p class="section-subtitle">Avaliações reais de compradores</p>
+            </div>
+
+            <!-- Cartões de depoimentos -->
+            <div class="testimonials-grid">
+
+                <!-- Testemunho 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <!-- Estrelas -->
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Eu sonhava em me tornar atleta profissional, e no FutMatch consegui uma oportunidade."</p>
+                    <div class="testimonial-author">
+                        <i class="fas fa-user-circle"></i>
+                        <div>
+                            <strong>Alex Junior</strong>
+                            <span>Atleta verificado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outros depoimentos omitidos por brevidade -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE A LOJA -->
+    <section id="about" class="about">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-info-circle"></i> Sobre a FutMatch</h2>
+                <p class="section-subtitle">Conheça mais sobre nos</p>
+            </div>
+
+            <!-- Grade de cartões informativos -->
+            <div class="about-grid">
+
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Segurança Total</h3>
+                    <p>Garantimos sua segurança e privacidade junto de profissionalismo a todo momento.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-check-double"></i></div>
+                    <h3>Garantia de seus direitos</h3>
+                    <p>Se um atleta fechar contrato com um clube garantimos todos os direitos do atleta sem cobrar nada.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Suporte 24/5</h3>
+                    <p>Estamos sempre disponíveis no suporte de WhatsApp.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-paper-plane"></i> Entre em Contato</h2>
+                <p class="section-subtitle">Fale conosco agora mesmo</p>
+            </div>
+
+            <!-- Cartões de contato -->
+            <div class="contact-grid">
+
+                <a href="https://wa.me/5511999999999" target="_blank" class="contact-card whatsapp">
+                    <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3>WhatsApp</h3>
+                    <p>Atendimento rápido</p>
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank" class="contact-card discord">
+                    <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                    <h3>Instagram</h3>
+                    <p>Comunidade e suporte</p>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER - Rodapé -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-col">
+                    <div class="footer-logo"><i class="fas fa-gamepad"></i> FutMatch</div>
+                    <p>A melhor ponte entre clubes e atletas.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Atletas</h4>
+                    <ul>
+                        <li><a href="#atletas-federados">Atletas Federados</a></li>
+                        <li><a href="#atletas-nao-federados">Atletas Não Federados</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 FutMatch. Todos os direitos reservados.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Modal de produto (abre ao clicar) -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+
+            <!-- Botão para fechar -->
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!-- Conteúdo dinâmico via JS -->
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="scrollTop" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Arquivo JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
